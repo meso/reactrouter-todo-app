@@ -17,7 +17,7 @@ jobs:
       id: deploy
       uses: meso/sakura-apprun-action@main
       with:
-        use-project-dockerfile: false
+        use-repository-dockerfile: false
         sakura-api-key: ${{ secrets.SAKURA_API_KEY }}
         sakura-api-secret: ${{ secrets.SAKURA_API_SECRET }}
         container-registry: meso.sakuracr.jp
